@@ -314,7 +314,7 @@ void loop() {
     if (clientMQTT.connected()) {
  
       //Confection du message à envoyer:
-    int sequenceNumber = +1;
+     sequenceNumber++;
      String msg = "Iteration " + String(sequenceNumber) ; //forger "Iteration: 0", puis "Iteration 1" ... //TODO
  
       //Publication du message sur un topic:
